@@ -29,6 +29,9 @@ jobs:
       - name: Build For Cloudflare Workers
         run: pnpm cloudflare:build:ci
 
+      - name: Remove conflicting _redirects file
+        run: rm -f dist/_redirects dist/_headers
+
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
