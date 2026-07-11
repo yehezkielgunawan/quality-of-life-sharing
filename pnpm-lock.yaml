@@ -663,6 +663,9 @@ packages:
   '@emnapi/runtime@1.11.1':
     resolution: {integrity: sha512-vgj7R3y3Wgx24IQaGPA/R6YFXLHVMOZ0uVEyIQPaWs+rd1AzfEMXlAC22FYwO1XkKR6NPsq7mUandH8oIRdZFw==}
 
+  '@emnapi/runtime@1.11.2':
+    resolution: {integrity: sha512-kyOl3X0DuTiT1h2ft8r2fYO8JYtU9a9Xis/zBSiGArNaagCOWx90N1k2wxp18czFDH+OgcWGb5ZP/XMt3dcyPA==}
+
   '@emnapi/wasi-threads@1.2.1':
     resolution: {integrity: sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w==}
 
@@ -831,14 +834,14 @@ packages:
   '@fix-webm-duration/parser@1.0.1':
     resolution: {integrity: sha512-Z6el7ohBBpym4iOmxDxumN715cHzLcAbtOtYfIbvoyToVtAuxvHt3ELXGff83iAXEU1Yj7g+obQBdiKJYVhbWw==}
 
-  '@floating-ui/core@1.8.0':
-    resolution: {integrity: sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ==}
+  '@floating-ui/core@1.7.5':
+    resolution: {integrity: sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==}
 
   '@floating-ui/dom@1.1.1':
     resolution: {integrity: sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==}
 
-  '@floating-ui/utils@0.2.12':
-    resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
+  '@floating-ui/utils@0.2.11':
+    resolution: {integrity: sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==}
 
   '@hono/node-server@1.19.14':
     resolution: {integrity: sha512-GwtvgtXxnWsucXvbQXkRgqksiH2Qed37H9xHZocE5sA3N8O8O8/8FA3uclQXxXVzc9XBZuEOMK7+r02FmSpHtw==}
@@ -2906,8 +2909,8 @@ packages:
   dompurify@3.2.7:
     resolution: {integrity: sha512-WhL/YuveyGXJaerVlMYGWhvQswa7myDG17P7Vu65EWC05o8vfeNbvNf4d/BOvH99+ZW+LlQsc1GDKMa1vNK6dw==}
 
-  dompurify@3.4.12:
-    resolution: {integrity: sha512-zQvGet8Z2sWbQhCmfFz/T5QWH2oBmjnqK3qvOjaqaNLrLEF912WamU+ohnTp0TCep/MFVHpdJuCZEdFOdTnEFg==}
+  dompurify@3.4.11:
+    resolution: {integrity: sha512-zhlUV12GsaRzMsf9q5M254YhA4+VuF0fG+QFqu6aYpoGlKtz+w8//jBcGVYBgQkR5GHjUomejY84AV+/uPbWdw==}
 
   domutils@4.0.2:
     resolution: {integrity: sha512-qI4JLRKnSzqFqr7hAlS5xQDusBCjKSEG4t4+7aNrIQMHBcsC2TGEhuyABJdYkgSewL57PNLYEiibY2iPKhKpaA==}
@@ -5988,6 +5991,11 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
+  '@emnapi/runtime@1.11.2':
+    dependencies:
+      tslib: 2.8.1
+    optional: true
+
   '@emnapi/wasi-threads@1.2.1':
     dependencies:
       tslib: 2.8.1
@@ -6085,15 +6093,15 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@floating-ui/core@1.8.0':
+  '@floating-ui/core@1.7.5':
     dependencies:
-      '@floating-ui/utils': 0.2.12
+      '@floating-ui/utils': 0.2.11
 
   '@floating-ui/dom@1.1.1':
     dependencies:
-      '@floating-ui/core': 1.8.0
+      '@floating-ui/core': 1.7.5
 
-  '@floating-ui/utils@0.2.12': {}
+  '@floating-ui/utils@0.2.11': {}
 
   '@hono/node-server@1.19.14(hono@4.12.29)':
     dependencies:
@@ -6203,7 +6211,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.5':
     dependencies:
-      '@emnapi/runtime': 1.11.1
+      '@emnapi/runtime': 1.11.2
     optional: true
 
   '@img/sharp-win32-arm64@0.34.5':
@@ -8333,7 +8341,7 @@ snapshots:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
-  dompurify@3.4.12:
+  dompurify@3.4.11:
     optionalDependencies:
       '@types/trusted-types': 2.0.7
 
@@ -9420,7 +9428,7 @@ snapshots:
       d3-sankey: 0.12.3
       dagre-d3-es: 7.0.14
       dayjs: 1.11.21
-      dompurify: 3.4.12
+      dompurify: 3.4.11
       es-toolkit: 1.49.0
       katex: 0.16.47
       khroma: 2.1.0

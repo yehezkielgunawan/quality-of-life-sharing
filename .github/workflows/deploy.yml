@@ -11,19 +11,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install pnpm
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           run_install: false
 
-      - name: Set up Node
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: "pnpm"
+          cache: pnpm
+          cache-dependency-path: pnpm-lock.yaml
 
-      - name: Install Deps (immutable)
-        run: pnpm install --no-frozen-lockfile
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build For Cloudflare Workers
         run: pnpm cloudflare:build:ci
@@ -33,4 +34,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          wranglerVersion: "4.110.0"
           command: deploy --name quality-of-life-sharing --minify
