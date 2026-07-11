@@ -434,15 +434,39 @@ A South Korean study (Zhang et al., 2024) mapped the <b>I-PACE model</b> of AI d
 
 <v-click>
 
-```mermaid {scale: 0.9}
-graph LR
-    A[Low Academic Self-Efficacy] --> B[Academic Stress]
-    B --> C[High Performance Expectations from AI]
-    C --> D[AI Dependency]
-    D --> E[Increased Laziness]
-    D --> F[Reduced Creativity]
-    D --> G[Weaker Critical Thinking]
-```
+<div class="flex flex-col items-center gap-3 mt-6 text-sm">
+
+  <div class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+    Low Self-Efficacy
+  </div>
+
+  <div class="text-gray-400">↓</div>
+
+  <div class="px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-600">
+    Academic Stress
+  </div>
+
+  <div class="text-gray-400">↓</div>
+
+  <div class="px-4 py-2 rounded-lg bg-yellow-100 dark:bg-yellow-900/30 border border-yellow-300 dark:border-yellow-700 font-semibold">
+    AI Dependency
+  </div>
+
+  <div class="text-gray-400">↓</div>
+
+  <div class="flex gap-3">
+    <div class="px-3 py-2 rounded bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-xs">
+      Laziness
+    </div>
+    <div class="px-3 py-2 rounded bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-xs">
+      Less Creative
+    </div>
+    <div class="px-3 py-2 rounded bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-xs">
+      Weak Critical Thinking
+    </div>
+  </div>
+
+</div>
 
 </v-click>
 
