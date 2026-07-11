@@ -1,0 +1,10 @@
+name = "quality-of-life-sharing"
+compatibility_date = "2024-01-01"
+
+# Deploy a directory of static assets (built by Slidev)
+[assets]
+directory = "./dist"
+
+# No Worker script needed — Pages handles static asset serving
+# If you want a custom domain, add it in the Cloudflare Dashboard:
+# Pages → quality-of-life-sharing → Custom Domains
