@@ -206,6 +206,10 @@ A study of **200 first-year students in Peru** (Vereau Amaya et al., 2025) found
 - **Inference skills** most affected (r = -.41)
 - **Evaluation skills** also vulnerable (r = -.33)
 
+<p class="mt-6 text-sm opacity-60">
+  Source: Vereau Amaya et al. (2025), "Between Assistance and Dependence," IJLTER 24(12), 6.
+</p>
+
 </div>
 
 ::right::
@@ -224,9 +228,13 @@ A study of **200 first-year students in Peru** (Vereau Amaya et al., 2025) found
 
 <v-click>
 
-<p class="mt-4 text-sm opacity-60">
-  Source: Vereau Amaya et al. (2025), "Between Assistance and Dependence," IJLTER 24(12), 6.
-</p>
+<div class="mt-4 bg-blue-50 dark:bg-blue-900/20 p-3 rounded-lg text-xs">
+  <div class="font-bold mb-1">📏 What does r = -.41 mean?</div>
+  <div><b>r</b> measures how strongly two things move together.</div>
+  <div class="mt-1">Range: <b>-1</b> (opposite) → <b>0</b> (no link) → <b>+1</b> (together).</div>
+  <div class="mt-1">Negative = as one goes up, the other goes down.</div>
+  <div class="mt-1"><b>-.41</b> = medium pattern: more AI dependence → weaker inference.</div>
+</div>
 
 </v-click>
 
